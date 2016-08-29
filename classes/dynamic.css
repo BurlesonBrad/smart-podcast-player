@@ -1,0 +1,170 @@
+/* This file includes the CSS that changes based on the user's selection of */
+/*	color, whether in the player defaults or the shortcode. */
+
+/* Progress bar: background and position indicator */
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track,
+body.spp .smart-track-player.stp-color-(($color)) .spp-track {
+	background: #(($color)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-loaded-container,
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-loaded-container {
+	background: #(($color)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-loaded,
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-loaded {
+	background: #(($loaded_color)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-progress .spp-position {
+	background: #((FFF; FFF; $color, 0.7)) (($importantStr));
+}
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-progress .spp-position:after {
+	background: #((FFF; FFF; $color, 0.7)) (($importantStr));
+	opacity: 0.5 (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-progress .spp-current-time,
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-progress .spp-current-time {
+	background: #(($played_color)) (($importantStr));
+}
+
+/* Buttons: download, subscribe, show notes, with hover variants */
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-track-details-container .spp-track-details .spp-button-download {
+	background: #(($color,2; $color; $color)) (($importantStr));
+	color: #((FFF; FFF; $color,.2)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-track-details-container .spp-track-details .spp-button-download:hover {
+	background: #(($color,3; $color,1.25; $color,0.95)) (($importantStr));
+	color: #((FFF; FFF; $color,0.2)) (($importantStr));
+}
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-button-download {
+	background: #(($color,1.5; $color,1.1; $color,0.925)) (($importantStr));
+	color: #((FFF; FFF; $color,0.3)) (($importantStr));
+}
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-button-download:hover {
+	background: #(($color, 1.7; $color,1.15; $color, 0.875)) (($importantStr));
+	color: #((FFF; FFF; $color,0.3)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-track-details-container .spp-track-details .spp-button-downloada {
+	background: #(($color,2; $color; $color)) (($importantStr));
+	color: #((FFF; FFF; $color,0.2)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-track-details-container .spp-track-details .spp-button-downloada:hover {
+	background: #(($color,3; $color,1.25; $color,0.95)) (($importantStr));
+	color: #((FFF; FFF; $color,0.2)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-track-details-container .spp-track-details .spp-button-subscribe {
+	background: #(($color,2; $color; $color)) (($importantStr));
+	color: #((FFF; FFF; $color,0.2)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-track-details-container .spp-track-details .spp-button-subscribe:hover {
+	background: #(($color,3; $color,1.25; $color,0.95)) (($importantStr));
+	color: #((FFF; FFF; $color,0.2)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-player .spp-show-notes-button {
+	background: #(($color, 1.5; $color,1.4; $color, 0.925)) (($importantStr));
+	color: #((FFF; FFF; $color, 0.3)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-player .spp-show-notes-button:hover {
+	background: #(($color, 1.7; $color, 1.8; $color, 0.875)) (($importantStr));
+	color: #((FFF; FFF; $color, 0.3)) (($importantStr));
+}
+
+/* Text: artist, title, duration, show count, show title */
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-artist,
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-artist {
+	color: #((FFF; FFF; 000)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-track-title,
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-track-title {
+	color: #((FFF; FFF; 000)) (($importantStr));
+	opacity: ((1; 1; 0.7)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-player .spp-duration,
+body.spp .smart-track-player.stp-color-(($color)).spp-has-download .spp-duration {
+	color: #((FFF; FFF; $color, 0.25)) (($importantStr));
+	opacity: 0.8 (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-show-count {
+	color: #((FFF; FFF; $color, 0.25)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-show-title {
+	color: #((FFF; FFF; $color, 0.25)) (($importantStr));
+}
+
+/* Controls: play, play(active), speed */
+/*   full player: next, prev */
+/*   track player: download, share */
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-controls .spp-play,
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-controls .spp-play {
+	background-image: (($white_controls_url; $white_controls_url; $black_controls_url)) (($importantStr));
+	background-position: -66px 0px (($importantStr));
+	opacity: 0.71 (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-player.spp-playing .spp-track .spp-controls .spp-play,
+body.spp .smart-track-player.stp-color-(($color)).spp-playing .spp-track .spp-controls .spp-play {
+	background-image: (($white_controls_url; $white_controls_url; $black_controls_url)) (($importantStr));
+	background-position: -14px 0px (($importantStr));
+	opacity: 0.71 (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-controls .spp-play:hover,
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-controls .spp-play:hover {
+	opacity: 0.9 (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-controls .spp-speed,
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-controls .spp-speed {
+	background-image: (($white_controls_url; $white_controls_url; $black_controls_url)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-controls .spp-speed:hover,
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-controls .spp-speed:hover {
+	opacity: 0.9 (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-controls .spp-next {
+	background-image: (($white_controls_url; $white_controls_url; $black_controls_url)) (($importantStr));
+	background-position: -118px -17px (($importantStr));
+	opacity: 0.71 (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-controls .spp-next:hover {
+	opacity: 0.9 (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-controls .spp-previous {
+	background-image: (($white_controls_url; $white_controls_url; $black_controls_url)) (($importantStr));
+	background-position: 0px -17px (($importantStr));
+	opacity: 0.71 (($importantStr));
+}
+body.spp .smart-podcast-player.spp-color-(($color)) .spp-player-container .spp-track .spp-controls .spp-previous:hover {
+	opacity: 0.9 (($importantStr));
+}
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-controls .spp-dload {
+	background-image: (($white_controls_url; $white_controls_url; $black_controls_url)) (($importantStr));
+	background-position: -94px -52px (($importantStr));
+	opacity: 0.71 (($importantStr));
+}
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-controls .spp-dload:hover {
+	opacity: 0.9 (($importantStr));
+}
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-controls .spp-dloada {
+	background-image: (($white_controls_url; $white_controls_url; $black_controls_url)) (($importantStr));
+	background-position: -94px -52px (($importantStr));
+	opacity: 0.71 (($importantStr));
+}
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-controls .spp-dloada:hover {
+	opacity: 0.9 (($importantStr));
+}
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-controls .spp-share {
+	background-image: (($white_controls_url; $white_controls_url; $black_controls_url)) (($importantStr));
+	background-position: -53px -52px (($importantStr));
+	opacity: 0.71 (($importantStr));
+}
+body.spp .smart-track-player.stp-color-(($color)) .spp-track .spp-controls .spp-share:hover {
+	opacity: 0.9 (($importantStr));
+}
+
+/* Links in show notes */
+body.spp .smart-podcast-player.spp-link-color-(($link_color)) .spp-track-details-container .spp-track-details .spp-track-details-body a {
+	color: #(($link_color)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-link-color-(($link_color)) .spp-track-details-container .spp-track-details .spp-track-details-body a:visited {
+	color: #(($link_color, 0.8)) (($importantStr));
+}
+body.spp .smart-podcast-player.spp-link-color-(($link_color)) .spp-track-details-container .spp-track-details .spp-track-details-body a:hover {
+	color: #(($link_color, 0.9)) (($importantStr));
+}
